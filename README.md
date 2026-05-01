@@ -10,6 +10,10 @@ with 'Dev:'. Feel free to change this if needed.
 You need ESP-IDF, any modern version should work. (Dev: Change this if you 
 require a more specific version)
 
+## ESP IDF version
+
+It seems to be working well with 5.5.2 and 6.0.1. Someone I met at DEF CON SG 1 said it failed with anything above 5.5.2 and below 6.0.
+
 Command-line:
 
 	idf.py set-target esp32c6
