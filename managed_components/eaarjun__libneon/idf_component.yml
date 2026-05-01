@@ -1,0 +1,16 @@
+dependencies:
+  idf:
+    version: '>=5.0'
+description: Neopixel driver library using RMT, effects included. No dependencies.
+license: MIT
+repository: git://github.com/Eaarjun/libneon.git
+repository_info:
+  commit_sha: 6a74ca1f30bd7d2819be28ccc026f2809813c61a
+  path: .
+targets:
+- esp32
+- esp32c3
+- esp32c6
+- esp32s3
+url: https://github.com/Eaarjun/libneon
+version: 1.0.2

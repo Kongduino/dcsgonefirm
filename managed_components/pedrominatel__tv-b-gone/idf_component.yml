@@ -1,0 +1,19 @@
+dependencies:
+  idf: '>=5.5'
+description: TV-B-Gone board runtime component for ESP-IDF using the RMT TX peripheral.
+documentation: https://github.com/pedrominatel/esp-components/tree/main/tv-b-gone
+issues: https://github.com/pedrominatel/esp-components/issues
+license: CC-BY-SA-4.0
+maintainers:
+- Pedro Minatel <pminatel@gmail.com>
+repository: git://github.com/pedrominatel/esp-components.git
+repository_info:
+  commit_sha: 394cda6d23d9bca8ace3541a2a75abb9a03d9de6
+  path: tv-b-gone
+tags:
+- infrared
+- remote
+- rmt
+- tv-b-gone
+url: https://github.com/pedrominatel/esp-components/tree/main/tv-b-gone
+version: 0.3.0
