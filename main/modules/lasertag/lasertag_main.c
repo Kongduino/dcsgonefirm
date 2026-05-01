@@ -497,9 +497,9 @@ static void wifi_init_for_espnow(void) {
   {
     const espnow_channel_config_t *init_cfg = &s_channel_configs[s_espnow_initial_config_idx];
     if (init_cfg->use_lr) {
-      ESP_ERROR_CHECK(esp_wifi_set_protocol(WIFI_IF_STAY, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N | WIFI_PROTOCOL_LR));
+      ESP_ERROR_CHECK(esp_wifi_set_protocol(WIFI_IF_STA, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N | WIFI_PROTOCOL_LR));
     } else {
-      ESP_ERROR_CHECK(esp_wifi_set_protocol(WIFI_IF_STAY, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N));
+      ESP_ERROR_CHECK(esp_wifi_set_protocol(WIFI_IF_STA, WIFI_PROTOCOL_11B | WIFI_PROTOCOL_11G | WIFI_PROTOCOL_11N));
     }
     ESP_ERROR_CHECK(esp_wifi_set_channel(init_cfg->channel, WIFI_SECOND_CHAN_NONE));
   }
