@@ -9,13 +9,13 @@
 #include <stdint.h>
 #include "driver/rmt_tx.h"
 
-#define LASERTAG_DISABLE_NO_TIMEOUT         0
+#define LASERTAG_DISABLE_NO_TIMEOUT 0
 #define LASERTAG_DISABLE_DEFAULT_TIMEOUT_MS 10000
 
 /**
  * Ensure the player identity (block ID, device ID, color, UUID) is
  * present in NVS — load it if it already exists, or generate and persist
- * a new one on first boot.  Idempotent: safe to call more than once.
+ * a new one on first boot. Idempotent: safe to call more than once.
  *
  * Prerequisites: NVS flash must be initialized.
  */
@@ -72,7 +72,7 @@ rmt_channel_handle_t lasertag_get_ir_tx_channel(void);
 /**
  * Suppress or re-enable laser-tag fire requests.
  * While suppressed, incoming fire requests are silently dropped and
- * any pending request is cleared.  Safe to call from any task.
+ * any pending request is cleared. Safe to call from any task.
  */
 void lasertag_suppress_fire(bool suppress);
 
@@ -82,3 +82,5 @@ void lasertag_suppress_fire(bool suppress);
  * return the channel to the laser-tag operating point.
  */
 void lasertag_restore_ir_tx_carrier(void);
+
+void fire_laser(int64_t now_ms);
